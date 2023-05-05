@@ -1,9 +1,12 @@
+import MusicSearch from './MusicSearch';
+
 const Homepage = (props) => {
+
   return ( 
     <>
-    This is the Homepage
+    <MusicSearch />
     </>
-   );
+   )
 }
  
 export default Homepage;
