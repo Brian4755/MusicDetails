@@ -9,7 +9,7 @@ const MusicSearch = (props) => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault()
-    props.handleMusicDetails(formData)
+    props.handleMusicSearch(formData)
   }
 
   return ( 
