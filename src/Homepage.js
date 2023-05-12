@@ -8,15 +8,15 @@ const Homepage = (props) => {
   const handleMusicSearch = async FormData => {
     const musicResults = await musicSearch(FormData)
     setMusic(musicResults)
+    console.log(musicResults.lyrics.lyrics.body.html)
   }
+
 
   return ( 
     <>
     <MusicSearch handleMusicSearch = {handleMusicSearch}/>
-    {/* {music.map(music =>
-      <>
-      <div>{music}</div>
-      </>)} */}
+    <td dangerouslySetInnerHTML={{__html: music.lyrics?.lyrics.body.html}} />
+    {/* {music.lyrics?.lyrics.body.html} */}
     </>
    )
 }
