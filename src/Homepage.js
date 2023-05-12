@@ -2,7 +2,7 @@ import MusicSearch from './MusicSearch';
 import { musicSearch } from './services/musicService';
 import { useState } from 'react';
 
-const Homepage = (props) => {
+const Homepage = () => {
   const[music, setMusic] = useState([])
 
   const handleMusicSearch = async FormData => {
@@ -16,7 +16,6 @@ const Homepage = (props) => {
     <>
     <MusicSearch handleMusicSearch = {handleMusicSearch}/>
     <td dangerouslySetInnerHTML={{__html: music.lyrics?.lyrics.body.html}} />
-    {/* {music.lyrics?.lyrics.body.html} */}
     </>
    )
 }
