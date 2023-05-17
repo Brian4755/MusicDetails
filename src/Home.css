@@ -1,6 +1,10 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .musicLyrics {
   pointer-events: none;
-  margin-top: 10%;
+  margin-top: 25%;
   font-size: 25px;
 }
 
@@ -40,4 +44,11 @@ form {
 
 #fontIcon {
   padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 50px;
+  font-weight: 600;
 }
