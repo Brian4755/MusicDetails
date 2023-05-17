@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const MusicSearch = (props) => {
   const [formData, setFormData] = useState({query: ''})
@@ -23,7 +25,7 @@ const MusicSearch = (props) => {
                   onChange={handleChange}
                   placeholder="Search for lyrics"
                 />
-                <button type="submit">Search</button>
+                <button type="submit">      <FontAwesomeIcon className="fab fa-react fa-2x" style={{color: 'white'}} icon={faMagnifyingGlass} /></button>
               </form>
     </>
    )

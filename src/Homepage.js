@@ -1,6 +1,7 @@
 import MusicSearch from './MusicSearch';
 import { musicSearch } from './services/musicService';
 import { useState } from 'react';
+import './Home.css'
 
 const Homepage = () => {
   const[music, setMusic] = useState([])
@@ -13,10 +14,10 @@ const Homepage = () => {
 
 
   return ( 
-    <>
-    <MusicSearch handleMusicSearch = {handleMusicSearch}/>
-    <td dangerouslySetInnerHTML={{__html: music.lyrics?.lyrics.body.html}} />
-    </>
+    <div className='musicSearch' >
+      <MusicSearch handleMusicSearch = {handleMusicSearch}/>
+      <div className='musicLyrics' dangerouslySetInnerHTML={{__html: music.lyrics?.lyrics.body.html}} />
+    </div>
    )
 }
  

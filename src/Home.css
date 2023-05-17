@@ -1,0 +1,25 @@
+.musicLyrics {
+  pointer-events: none;
+  margin-top: 10%;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.musicSearch {
+  text-align: center;
+  margin-top: 10%;
+}
+
+form {
+  /* background-color: black; */
+}
