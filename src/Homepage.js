@@ -15,14 +15,14 @@ const Homepage = () => {
   const handleMusicSearch = async FormData => {
     const musicResults = await musicSearch(FormData)
     setMusic(musicResults)
-    console.log(musicResults)
-    console.log(musicResults[0].lyrics.lyrics.body.html)
   }
 
 
   return ( 
     <>
-      <h1>Type the Song Name for Lyrics</h1>
+      <h1>Type the Song Name with the Artist for Lyrics</h1>
+      <img className='edSheeranImage' alt='Ed Sheeran' src='./edSheeranImage.png'/>
+      <img className='ladyGagaImage' alt='Lady Gaga' src='./ladyGagaImage.png'/>
       <div className='musicSearch' >
         <MusicSearch handleMusicSearch = {handleMusicSearch}/>
         <div className='ref' ref={scrollToRef}></div>

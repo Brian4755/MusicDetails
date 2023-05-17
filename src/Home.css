@@ -63,3 +63,40 @@ h2 {
   height: 20px;
   width: 20px;
 }
+
+.edSheeranImage {
+  position: absolute;
+  height: 50%;
+  left: 10%;
+  top: 40%;
+  z-index: -1;
+}
+
+.ladyGagaImage {
+  position: absolute;
+  height: 50%;
+  right: 10%;
+  top: 40%;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ladyGagaImage, .edSheeranImage {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ladyGagaImage {
+    display: none;
+  }
+  .edSheeranImage {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    top: 400px;
+  }
+  .ref {
+    margin-top: 120%;
+  }
+}
