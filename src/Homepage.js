@@ -7,9 +7,9 @@ const Homepage = () => {
   const[music, setMusic] = useState([])
 
   const scrollToRef = useRef();
-
   useEffect(() => {
-    music[1] && scrollToRef.current.scrollIntoView({ behavior: "smooth" })
+    music[1] && scrollToRef.current.scrollIntoView({ behavior: "smooth"
+   })
   });
 
   const handleMusicSearch = async FormData => {
@@ -25,9 +25,10 @@ const Homepage = () => {
       <h1>Type the Song Name for Lyrics</h1>
       <div className='musicSearch' >
         <MusicSearch handleMusicSearch = {handleMusicSearch}/>
-        <div ref={scrollToRef}>
-          <h2>{music[1]?.full_title}</h2>
-          <div className='musicLyrics' dangerouslySetInnerHTML={{__html: music[0]?.lyrics.lyrics.body.html}} />
+        <div className='ref' ref={scrollToRef}></div>
+          <div className='musicData'>
+            <h2>{music[1]?.full_title}</h2>
+            <div className='musicLyrics' dangerouslySetInnerHTML={{__html: music[0]?.lyrics.lyrics.body.html}} />
         </div>
       </div>
     </>

@@ -53,5 +53,13 @@ h1 {
 }
 
 h2 {
+  font-size: 50px;
+  color: rgb(33, 100, 162);
+}
+
+.ref {
+  position: relative;
   margin-top: 30%;
+  height: 20px;
+  width: 20px;
 }
