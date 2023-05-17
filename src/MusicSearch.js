@@ -25,7 +25,7 @@ const MusicSearch = (props) => {
                   onChange={handleChange}
                   placeholder="Search for lyrics"
                 />
-                <button type="submit">      <FontAwesomeIcon className="fab fa-react fa-2x" style={{color: 'white'}} icon={faMagnifyingGlass} /></button>
+                <button type="submit">      <FontAwesomeIcon id='fontIcon' className="fab fa-react fa-2x" style={{color: 'white'}} icon={faMagnifyingGlass} /></button>
               </form>
     </>
    )

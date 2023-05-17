@@ -10,9 +10,16 @@ a {
 }
 
 button {
-  background-color: black;
-  color: white;
+  background-color: cornflowerblue;
   cursor: pointer;
+  vertical-align: top;
+  margin-left: 5px;
+  width: 150px;
+  border-radius: 4%;
+}
+
+button:hover {
+  opacity: 50%;
 }
 
 .musicSearch {
@@ -20,6 +27,17 @@ button {
   margin-top: 10%;
 }
 
+input {
+  height: 37.34px;
+  vertical-align: top;
+  font-size: 25px;
+  border-radius: 4%;
+}
+
 form {
-  /* background-color: black; */
+  vertical-align: top;
+}
+
+#fontIcon {
+  padding: 5px;
 }
